@@ -1,0 +1,75 @@
+.search-container {
+  margin: 30px 0;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 45px 14px 20px;
+  font-size: 16px;
+  border: 2px solid #e1e4e8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background-color: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0366d6;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.2);
+}
+
+.search-input::placeholder {
+  color: #959da5;
+}
+
+.clear-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #959da5;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  line-height: 1;
+}
+
+.clear-button:hover {
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+.search-info {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6a737d;
+  padding: 0 4px;
+}
+
+/* Optional: Add a search icon */
+.search-input-wrapper::before {
+  content: "🔍";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #959da5;
+  font-size: 16px;
+  z-index: 1;
+}
+
+/* If you want the search icon, also add padding to the input */
+.search-input-with-icon {
+  padding-left: 45px;
+}
